@@ -12,9 +12,9 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
 
-  // getAllCategory(): Observable<string[]> {
-  //   return this.http.get<string[]>(Constant.API_END_POINT + Constant.METHODS.GET_ALL_CATEGORY);
-  // }
+  getAllCategory(): Observable<string[]> {
+    return this.http.get<string[]>(Constant.API_END_POINT + Constant.METHODS.GET_ALL_CATEGORY);
+  }
 
 
   getAllProducts(): Observable<IProducts[]> {

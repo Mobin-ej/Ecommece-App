@@ -3,7 +3,7 @@ export const Constant = {
     METHODS: {
         GET_ALL_PRODUCT: 'products',
         CREATE_PRODUCT: 'products',
-        // DELETE_PRODUCT: 'products'
-        // GET_ALL_CATEGORY: 'products/categories',
+        DELETE_PRODUCT: 'products',
+        GET_ALL_CATEGORY: 'products/categories',
     }
 }
