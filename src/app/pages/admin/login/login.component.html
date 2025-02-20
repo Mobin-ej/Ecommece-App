@@ -1,0 +1,48 @@
+<div class="body">
+    <div class="container">
+        <div class="left">
+            <div class="welcome-message">
+                <h1>Welcome!</h1>
+                <p>We're glad to have you back.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="login-box">
+                <div class="login-title">
+                    <h2>Login</h2>
+                </div>
+                <form action="/login" method="POST">
+                    <div class="input-box">
+                        <label for="username">Username:</label>
+                        <input type="text" [(ngModel)]="loginObj.username" id="username" name="username" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password:</label>
+                        <input type="password" [(ngModel)]="loginObj.password" id="password" name="password" required>
+                    </div>
+                    <button type="button" (click)="onLogin()">Login</button>
+                </form>
+
+                <!-- Forgot password and sign up links -->
+                <div class="login-options">
+                    <a href="/forgot-password">Forgot password?</a>
+                    <a href="/signup">Don't have an account? Sign up</a>
+                </div>
+
+                <!-- Divider with "or" in the middle -->
+                <div class="divider">or</div>
+
+                <!-- Social login icons -->
+                <div class="social-login">
+                    <fa-icon [icon]="faGoogle"></fa-icon>
+                    <fa-icon [icon]="faFacebook"></fa-icon>
+                    <fa-icon [icon]="faTwitter"></fa-icon>
+                    <fa-icon [icon]="faApple"></fa-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome CDN Script -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> -->
+</div>
